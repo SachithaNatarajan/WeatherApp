@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.container h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.search-box {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 12px;
+  width: 65%;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 8px #00c6ff;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.card {
+  backdrop-filter: blur(15px);
+  background: rgba(174, 180, 186, 0.12);
+  color: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.loading {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.error {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 15px;
+}
